@@ -49,3 +49,20 @@ public class N_series {
         System.out.println(sum);
     }
 }
+
+
+// Write a program to find the largest number out of three numbers
+public class BigNumber {
+    public static void main (String args[]) {
+        int x=11, y=7, z=9;
+        if(x>y && x>z){
+            System.out.println("largest number is:" + x);
+        }
+        else if(y>z && y>x){
+            System.out.println("largest number is:" + y);
+        }
+        else {
+           System.out.println("largest number is:" + z); 
+        }
+    }
+}
