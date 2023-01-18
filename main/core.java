@@ -77,3 +77,17 @@ public static void main(String[] args){
 System.out.println(Adder.add(11,11));  
 System.out.println(Adder.add(11,11,11));  
 }}  
+
+
+// Write a Java program using constructor
+public class Constructor{
+  Constructor(){
+   int a, b, sum=0;
+   a = 10;
+   b = 20;
+   sum = a+b;
+System.out.println("Total"+ sum);
+}
+public static void main(String args[]){
+    Constructor ob = new Constructor();
+}}
