@@ -137,3 +137,21 @@ class Z extends Y {
         ob.methodZ();
     }
 }
+
+
+// write a java program using super class and sub class
+class ABC {
+	public void methodA(){
+    	System.out.println("Super class method");
+    }
+}
+class XYZ extends ABC {
+	public void methodB(){
+    	System.out.println("Sub class Method");
+    }
+    public static void main(String args[]){
+    	XYZ obj = new XYZ();
+        obj.methodA();
+        obj.methodB();
+    }
+}
