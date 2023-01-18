@@ -91,3 +91,24 @@ System.out.println("Total"+ sum);
 public static void main(String args[]){
     Constructor ob = new Constructor();
 }}
+
+
+// write a java program using copy constructor
+public class Copycons {
+    String web;
+    Copycons(String w){
+        web = w;
+    }
+    Copycons(Copycons je){
+        web = je.web;
+    }
+    void disp(){
+        System.out.println("Website: " + web);
+    }
+    public static void  main (String args[]){
+        Copycons obj1 = new Copycons("www.eshooles.com");
+        Copycons obj2 = new Copycons(obj1);
+        obj1.disp();
+        obj2.disp();
+    }    
+}
