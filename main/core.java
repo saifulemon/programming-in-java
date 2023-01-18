@@ -112,3 +112,28 @@ public class Copycons {
         obj2.disp();
     }    
 }
+
+
+// write a java program using multilevel inheritance
+class X {
+    public void methodX(){
+        System.out.println("X class Method");
+    }
+}
+
+class Y extends X {
+    public void methodY(){
+        System.out.println("Y class method");
+    }
+}
+class Z extends Y {
+    public void methodZ(){
+        System.out.println("Z class method");
+    }
+    public static void main(String args[]){
+        Z ob = new Z();
+        ob.methodX();
+        ob.methodY();
+        ob.methodZ();
+    }
+}
